@@ -1,0 +1,89 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --color-red: #c3352b;
+    --color-yellow: #ce7e00;
+    --color-white: #ffffff;
+    
+}
+
+body {
+    background-color: #dedede;
+    width: 84%;
+    margin: auto;
+}
+table.tabela-alunos {
+    width: 100%;
+    background-color: #ffffff;
+    
+}
+
+.tabela-alunos, th, td {
+    border: 1px solid #aaaaaa;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+td:last-child {
+    text-align: center;
+    
+}
+
+tbody > tr:hover {
+    background-color: #efefef;
+}
+
+thead > tr {
+    background-color: #333;
+    color: #ffffff;
+}
+
+
+tbody > tr:nth-child(even) {
+    background-color: #ededed;
+}
+
+tbody button {
+    background-color: var(--color-white);
+    border-radius: 2px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid;
+    width: 80px;
+    padding: none;
+
+}
+
+tbody button:first-child {
+    color: var(--color-yellow);
+    border-color: var(--color-yellow);
+    cursor: pointer;
+    margin-right: 0;
+    width: 35%;
+    
+}
+
+tbody button:first-child:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+}
+
+tbody button:last-child {
+    border-color: var(--color-red);
+    color: var(--color-red);
+    cursor: pointer;
+    width: 35%;
+}
+
+tbody button:last-child:hover {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    cursor: pointer;
+}
